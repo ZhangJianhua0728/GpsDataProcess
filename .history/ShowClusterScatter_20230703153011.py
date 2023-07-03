@@ -48,8 +48,8 @@ def show_class_result(data:pd.DataFrame, PC_list:list, label:str, pca, num_cls:i
     plt.ylabel(xy_labels[1], fontsize=12)
     
 
-    plt.xlim([-7.5,20])
-    plt.ylim([-5,15])
+    # plt.xlim([-7.5,20])
+    # plt.ylim([-7.5,10])
     
     # 设置轴刻度属性
     plt.xticks(fontsize=10.5)

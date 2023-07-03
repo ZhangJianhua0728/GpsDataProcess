@@ -128,7 +128,7 @@ def show_correlation_plot(loading_df: pd.DataFrame, x_cols: list, text_labels: l
     # 计算每个向量的长度
     lengths = np.linalg.norm(loading_df[x_cols], axis=1)
     # 绘制原点到向量的线，并在线的上方添加注释
-    cmap = plt.cm.YlOrRd
+    cmap = plt.cm.ra
     norm = plt.Normalize(vmin=0, vmax=1)
     scalar_map = plt.cm.ScalarMappable(norm=norm, cmap=cmap)
     ax.quiver([0]*len(loading_df), [0]*len(loading_df), loading_df[x_cols[0]]*1.5, loading_df[x_cols[1]]*1.5, linewidth=0.8,
